@@ -47,6 +47,10 @@ addTransaction(){
     const amount = parseFloat(document.getElementById('amount').value);
     const type =document.getElementById('type').value;
 
+    if (!/^[A-Za-z\s]+$/.test(description)) {
+        alert('Description can only contain letters and spaces.');
+        return;
+    }
     if(!description || isNaN(amount)){
         alert('Please provide a valid description and amount');
         return;
