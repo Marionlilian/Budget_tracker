@@ -23,7 +23,17 @@
         box-shadow: 0 12px 25px rgba (0,0,0,0.05);
         margin-left: 5%;
         margin-right: 1%;
+        /* padding-left: 15%; */
         height: fit-content;
+        padding: 1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+      
+       
     }
     .transactionid{
         background-color: var(--card-background);
@@ -111,9 +121,12 @@
         .app-container{
             flex-direction: column;
             padding: 1rem;
+           
 
         }
     }
     #balance{
         font-size: 2rem;
+        color: blueviolet;
+        text-align: center;
     }

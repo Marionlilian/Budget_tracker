@@ -106,6 +106,13 @@ this.updateBalance();
  
 
 updateBalance(){
+    let balance = 0;
+
+    this.transactions.forEach (tr =>{
+        balance+=tr.amount;
+    });
+  this.balanceElement.textContent = `Balance: ${(balance.toFixed(2))}`;
+
 
 }
 
